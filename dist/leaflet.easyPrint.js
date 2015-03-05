@@ -2,7 +2,7 @@ L.Control.EasyPrint = L.Control.extend({
 
   options: {
     position: 'bottomright',
-    title: 'Print map',
+    title: 'Print map'
   },
 
   initialize: function(mapId){
@@ -18,11 +18,10 @@ L.Control.EasyPrint = L.Control.extend({
     return container;
   },
 
-
   _click: function (e) {
     L.DomEvent.stopPropagation(e);
     L.DomEvent.preventDefault(e);
-  },
+  }
 });
 
 L.easyPrint = function(mapId) {
